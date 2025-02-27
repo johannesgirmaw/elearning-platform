@@ -1,0 +1,333 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import '~video-react/dist/video-react.css';
+
+@layer components{
+  .custom-button{
+    @apply text-custom_orange-900 hover:border hover:border-white px-3 hover:text-white hover:bg-custom_orange-900 w-40 h-12 m-1 border border-gray-200
+  }
+  .custom-button-disabled{
+    @apply text-[#cecbcb] bg-[#f5f5f5] hover:border w-40 h-12 m-1 border border-[#e1e1e1]
+  }
+  .add-border{
+    @apply border p-5 rounded-2xl border-gray-300 hover:border-custom_orange-900
+  }
+}
+
+.ant-btn-primary {
+  background-color: #ff735c;
+}
+
+.ant-tabs .ant-tabs-content-holder {
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+:root {
+  --ag-selected-row-background-color:gray !important;
+}
+
+body:has(div.hidden-body),
+#root:has(div.hidden-body){
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+select.decorated option:hover {
+  box-shadow: 0 0 10px 100px #1882A8 inset;
+}
+
+.ag-theme-alpine {
+  --ag-selected-row-background-color:rgb(255,241,239) !important;
+  --ag-alpine-active-color:rgb(255,115,92) !important;
+  --ag-borders:1px !important;
+  --ag-border-color:rgb(161, 159, 159) !important;
+}
+
+.ag-theme-alpine .ag-layout-auto-height .ag-center-cols-clipper {
+  min-height: auto !important;
+}
+
+.ag-root.ag-layout-auto-height{
+  width: 100% !important;
+}
+
+.st0{
+  fill-rule:evenodd;
+  clip-rule:evenodd;
+  stroke:#da5b5b;
+  stroke-width:0.5;
+  stroke-miterlimit:2.6131;
+}
+
+
+.sidebar-blur {
+  background: #c1c1c142;
+  z-index: 3;
+}
+
+.ql-snow .ql-tooltip {
+  left: 0 !important
+}
+
+:where(.css-dev-only-do-not-override-gzal6t).ant-switch.ant-switch-checked {
+    background: #ff735c !important;
+}
+:where(.css-dev-only-do-not-override-gzal6t).ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
+     color: white; 
+     border-color: white; 
+}
+
+.ns-card{
+  width: 100% !important;
+  padding: 1.5em;
+  border-radius: 5px;
+  border:1px #e5e7eb solid;
+}
+
+.learning .ant-tabs-nav {
+  background-color: #ff735c;
+  color: white;
+  width: 100%;
+}
+
+.learning .ant-tabs-nav-list {
+  margin: auto;
+}
+
+.learning .ant-tabs-tab {
+  color: #eee;
+  font-weight: bold;
+}
+
+.learning .ant-tabs-tab:hover, 
+.learning .ant-tabs-tab-btn:active,
+.learning .ant-tabs-tab-btn:focus:not(:focus-visible){
+  color: white;
+  font-weight: bold;
+}
+
+.learning .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: white;
+  font-weight: bold;
+}
+.learning .ant-tabs-nav .ant-tabs-ink-bar {
+  background-color: white;
+  height: 4px;
+}
+
+.duration + input:focus {
+  border: 2px solid  #da5b5b;
+}
+.css-13cymwt-control{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-border-opacity: 1;
+  border-color: rgb(255 241 239 / var(--tw-border-opacity)) !important;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+.css-xe7bx-option{
+  border: 2px solid  #ff735c !important;
+  background-color: #ff735c !important;
+  height: 100%;
+}
+.css-14z1znn-option {
+  background-color: #fff1ef !important;
+}
+#react-select-5-listbox{
+  background-color: white;
+}
+.css-t3ipsp-control:hover{
+  border-color: 2px solid  #ff735c !important;
+  border-radius: 0.75rem;
+  height: 3rem;
+}
+.css-t3ipsp-control{
+  border-color: #ff735c !important;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 0 1px #ff735c !important;
+  height: 3rem;
+}
+
+:where(.css-dev-only-do-not-override-dkbvqv).ant-btn-primary:not(:disabled):not(.ant-btn-disabled):hover {
+  color: #fff;
+  background: #ff735c;
+}
+:where(.css-dev-only-do-not-override-dkbvqv).ant-btn-primary {
+  color: #000;
+  background: white;
+  box-shadow: 0 2px 0 rgba(5, 145, 255, 0.1);
+}
+:where(.css-dev-only-do-not-override-dkbvqv).ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
+  color: #fff;
+  background: #ff735c;
+  border-color: white !important;;
+}
+:where(.css-dev-only-do-not-override-dkbvqv).ant-btn-default {
+  background: #ffffff;
+  color: rgba(0, 0, 0, 0.88);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.02);
+} 
+
+.ant-menu-item-selected {
+  color: #ff735c !important;
+}
+
+.ant-layout-sider {
+  background-color: #ff735c !important;
+}
+
+.ant-menu-light.ant-menu-submenu>.ant-menu {
+  background-color: #ff735c !important;
+}
+
+/*Development only*/
+:where(.css-dev-only-do-not-override-dkbvqv).ant-steps.ant-steps-vertical {
+  display: flex ;
+  flex-direction: row !important;
+}
+:where(.css-dev-only-do-not-override-k9ezze).ant-steps.ant-steps-vertical {
+  display: flex;
+  flex-direction: row;
+}
+:where(.css-dkbvqv).ant-steps.ant-steps-vertical {
+  display: flex;
+  flex-direction: row !important;
+}
+
+/*Deployed version*/
+:where(.css-k9ezze).ant-steps.ant-steps-vertical {
+  display: flex;
+  flex-direction: row !important;
+}
+
+
+:where(.css-dev-only-do-not-override-k9ezze).ant-steps.ant-steps-vertical{
+  flex-direction: row !important;
+}
+
+.ant-layout-sider {
+  width: auto !important;
+  min-width: auto !important;
+  max-width: none !important;
+}
+
+.rbc-header {
+  background: blue;
+  color: white;
+  padding: 4px;
+  font-weight: bold;
+}
+
+.rbc-event {
+  padding: 0 !important;
+  font-size: 16px;
+}
+
+.rbc-event-label {
+  display: none !important;
+}
+
+.rbc-events-container {
+  /* background-color: blueviolet !important; */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* Customize scrollbar */
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(198, 232, 247); /* Background color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #FF735C; /* Color of the scrollbar thumb */
+  border-radius: 4px; /* Border radius of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #452d2a; /* Color of the scrollbar thumb on hover */
+}
+
+/* @media (max-width: 768px) {
+  .rbc-time-column .rbc-timeslot-group {
+    width: 500px;
+  }
+ 
+  .rbc-time-column:first-child .rbc-timeslot-group {
+    width: 50px;
+  }
+
+  .rbc-label .rbc-time-header-gutter {
+    width: 50px;
+  }
+
+  .rbc-time-content {
+    overflow-y: unset !important
+} */
+
+/* .rbc-header {
+  flex-basis: 500px !important;
+} */
+
+/* .rbc-day-bg {
+  flex-basis: 500px;
+  border-bottom: 1px solid #ddd;
+} */
+/* 
+.rbc-time-view {
+  border: none;
+}
+
+.rbc-time-content {
+  border-top: none;
+}
+} */
+
+.react-international-phone-input-container .react-international-phone-input {
+
+  width: 90%;
+  height: var(--react-international-phone-height, 40px) !important;
+  border: 1px solid var(--react-international-phone-border-color, #fff1ef) !important;
+  background-color: var(--react-international-phone-background-color, white);
+  border-top-right-radius: var(--react-international-phone-border-radius, 12px) !important;
+  border-bottom-right-radius: var(--react-international-phone-border-radius, 12px) !important;
+
+}
+.react-international-phone-country-selector-button {
+  height: var(--react-international-phone-height, 40px) !important;
+  border: 1px solid var(--react-international-phone-country-selector-border-color, var(--react-international-phone-border-color, #fff1ef)) !important;
+  background-color: var(--react-international-phone-country-selector-background-color, var(--react-international-phone-background-color, white));
+  border-top-left-radius: var(--react-international-phone-border-radius, 12px) !important;
+  border-bottom-left-radius: var(--react-international-phone-border-radius, 12px) !important;
+}
+
+.react-international-phone-input-container .react-international-phone-input:focus{
+  outline-color: #FF735C !important;  
+  outline: #FF735C !important;
+  /* border: 1px solid #FF735C; */
+  box-shadow: 0 0 5px #FF735C;
+  border-color: #FF735C;
+}
